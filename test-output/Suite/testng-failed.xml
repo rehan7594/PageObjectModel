@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.facebook.pageobjectmodel.reportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.facebook.pageobjectmodel.testcases.FacebookLoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="fbLogoImageTest"/>
+          <include name="loginTest"/>
+          <include name="LoginPageTitle"/>
+        </methods>
+      </class> <!-- com.facebook.pageobjectmodel.testcases.FacebookLoginPageTest -->
+      <class name="com.facebook.pageobjectmodel.testcases.FacebookSingUpPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="createNewAccountTest"/>
+        </methods>
+      </class> <!-- com.facebook.pageobjectmodel.testcases.FacebookSingUpPageTest -->
+      <class name="com.facebook.pageobjectmodel.testcases.FacebookProfilePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyProfilePageTest"/>
+        </methods>
+      </class> <!-- com.facebook.pageobjectmodel.testcases.FacebookProfilePageTest -->
+      <class name="com.facebook.pageobjectmodel.testcases.FacebookHomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.facebook.pageobjectmodel.testcases.FacebookHomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
